@@ -1,0 +1,66 @@
+# Gradle files
+.gradle/
+build/
+/build/
+*/build/
+local.properties
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/misc.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/deploymentTargetDropDown.xml
+.idea/migrations.xml
+.idea/inspectionProfiles/
+.idea/dictionaries/
+
+# Android specific
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Android Profiling
+*.hprof
+
+# Kotlin
+.kotlin/
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Version control
+.svn/
+
+# Claude
+CLAUDE.md
+.claude
