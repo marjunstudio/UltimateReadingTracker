@@ -63,6 +63,10 @@ class BookRepositoryImpl @Inject constructor(
         }
     }
 
+    override suspend fun getBookByIsbn(isbn: String): Book? {
+        return bookDao.getBookByIsbn(isbn)?.toDomainModel()
+    }
+
     override fun getAllBooks(): Flow<List<Book>> {
         return bookDao.getAllBooks().map { entities ->
             entities.map { it.toDomainModel() }

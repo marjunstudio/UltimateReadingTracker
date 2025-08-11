@@ -10,6 +10,7 @@ interface BookRepository {
     suspend fun updateBook(book: Book): Result<Unit>
     suspend fun deleteBook(book: Book): Result<Unit>
     fun getBookById(bookId: Long): Flow<Book?>
+    suspend fun getBookByIsbn(isbn: String): Book?
     fun getAllBooks(): Flow<List<Book>>
     fun getBooksByStatus(status: ReadingStatus): Flow<List<Book>>
     fun searchBooks(query: String): Flow<List<Book>>

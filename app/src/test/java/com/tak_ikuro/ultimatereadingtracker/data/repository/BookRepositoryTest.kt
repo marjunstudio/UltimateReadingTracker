@@ -27,7 +27,6 @@ class BookRepositoryTest {
     @Test
     fun `saveBook should insert book and return success`() = runBlocking {
         val book = createTestBook()
-        val bookEntity = book.toEntity()
         
         coEvery { bookDao.getBookByIsbn(book.isbn!!) } returns null
         coEvery { bookDao.insertBook(any()) } returns 1L
@@ -57,7 +56,6 @@ class BookRepositoryTest {
     @Test
     fun `updateBook should update existing book`() = runBlocking {
         val book = createTestBook()
-        val bookEntity = book.toEntity()
         
         coEvery { bookDao.updateBook(any()) } just Runs
 
